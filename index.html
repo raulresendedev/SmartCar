@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/css/reset.css" rel="stylesheet">
+    <link href='./src/css/homepage.css' rel="stylesheet">
+    <title>SmartCar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="popup" id="popup">
+            <img src="./src/ico/food.png">
+            <h2>ALIMENTAÇÃO</h2>
+            <p>Acesse aqui seu aplicativo de delivery para fazer seu pedido de comida.</p>
+            <p>Tente dizer “Hey Carro, acessar Ifood”</p>
+            <p>Aí é só seguir com sua pesquisa e realizar seu pedido!</p>
+            <p>(dentro desse ícone/botão, criar um link de acesso no ícone/botão do ifood do site do ifood)</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        <div class="notifications">
+
+        </div>
+        <div class="content">
+            <div class="clock">
+                <span class="clock-time"></span>
+                <span class="clock-ampm"></span>
+            </div>
+        </div>
+        <div class="line"> 
+            <img class="icon" src="./src/ico/food.png" onclick="openPopup()">
+            <img class="icon" src="./src/ico/calendar.png">
+            <img class="icon" src="./src/ico/google.png">
+            <img class="icon" src="./src/ico/help.png">
+        </div>
+        <div class="line">
+            <img class="icon" src="./src/ico/mapa.png">
+            <img class="icon" src="./src/ico/pipoca.png">
+            <img class="icon" src="./src/ico/settings.png">
+            <img class="icon" src="./src/ico/usuario.png">
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>
