@@ -11,14 +11,12 @@
 <body>
     <div class="container">
         <div class="popup" id="popup">
-            <img src="./src/ico/food.png">
-            <h2>ALIMENTAÇÃO</h2>
-            <p>Acesse aqui seu aplicativo de delivery para fazer seu pedido de comida.</p>
-            <p>Tente dizer “Hey Carro, acessar Ifood”</p>
-            <p>Aí é só seguir com sua pesquisa e realizar seu pedido!</p>
-            <p>(dentro desse ícone/botão, criar um link de acesso no ícone/botão do ifood do site do ifood)</p>
+            <img src="./src/ico/food.png" id="imagem">
+            <h2 id="texto"></h2>
+            <p id="paragrafo"></p>
             <button type="button" onclick="closePopup()">OK</button>
         </div>
+
         <div class="notifications">
 
         </div>
@@ -29,27 +27,21 @@
             </div>
         </div>
         <div class="line"> 
-            <img class="icon" src="./src/ico/food.png" onclick="openPopup()">
-            <img class="icon" src="./src/ico/calendar.png">
-            <img class="icon" src="./src/ico/google.png">
-            <img class="icon" src="./src/ico/help.png">
+            <img class="icon" src="./src/ico/food.png" onclick="openPopup('alimentacao')">
+            <img class="icon" src="./src/ico/calendar.png" onclick="openPopup('rotina')">
+            <img class="icon" src="./src/ico/google.png" onclick="openPopup('google')">
+            <img class="icon" src="./src/ico/help.png" onclick="openPopup('help')">
         </div>
         <div class="line">
-            <img class="icon" src="./src/ico/mapa.png">
-            <img class="icon" src="./src/ico/pipoca.png">
-            <img class="icon" src="./src/ico/settings.png">
-            <img class="icon" src="./src/ico/usuario.png">
+            <img class="icon" src="./src/ico/mapa.png" onclick="openPopup('mapa')">
+            <img class="icon" src="./src/ico/pipoca.png" onclick="openPopup('entretenimento')">
+            <img class="icon" src="./src/ico/settings.png" onclick="openPopup('dispositivos')">
+            <img class="icon" src="./src/ico/usuario.png" onclick="openPopup('usuario')">
         </div>
     </div>
-    <script>
-        let popup = document.getElementById("popup");
-        function openPopup(){
-            popup.classList.add("open-popup");
-        }
-        function closePopup(){
-            popup.classList.remove("open-popup");
-        }
-    </script>
+
+    <script src="./popup.js"> </script>  
     <script src="./main.js"></script>
+    
 </body>
 </html>
