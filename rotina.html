@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/css/reset.css" rel="stylesheet">
+    <link href='./src/css/homepage.css' rel="stylesheet">
+    <title>SmartCar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="popup" id="popup">
+            <img src="./src/ico/mais.png" id="imagem">
+            <h2 id="texto"></h2>
+            <p id="paragrafo"></p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
+        <div class="notifications">
+
+        </div>
+        <div class="content">
+            <div class="clock">
+                <span class="clock-time"></span>
+                <span class="clock-ampm"></span>
+            </div>
+        </div>
+        <div class="line">
+            <img class="icon" src="./src/ico/mapa.png">
+            <img class="icon" src="./src/ico/seguranca.png">
+            <img class="icon" src="./src/ico/mais.png" onclick="openPopup('novarotina')">
+            <a href="javascript:history.back()"><img class="icon" src="./src/ico/voltar.png"></a>
+        </div>  
+
+    </div>
+
+    <script src="./popup.js"> </script>  
+    <script src="./main.js"></script>
+    
+</body>
+</html>

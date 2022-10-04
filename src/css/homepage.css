@@ -33,7 +33,11 @@ html, body{
     }
     
     .clock{
+<<<<<<< HEAD
         font-size: 100px;
+=======
+        font-size: 80px;
+>>>>>>> 9fa3ed671368ed12cc5336ae5764d97db4d7c88c
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 150px;
@@ -58,15 +62,24 @@ html, body{
     }
     
     .icon{
+<<<<<<< HEAD
         height: 100px;
         width: 100px;
+=======
+        height: 80px;
+        width: 80px;
+>>>>>>> 9fa3ed671368ed12cc5336ae5764d97db4d7c88c
         margin-left: 1vh;
         margin-right: 1vh;
         cursor: pointer;
         overflow: hidden;
         border: 2px solid rgba(0, 0, 0, 0);
         -webkit-transition: -webkit-transform .5s ease;
+<<<<<<< HEAD
         transition: transform .5s ease;
+=======
+        transition: transform .3s ease;
+>>>>>>> 9fa3ed671368ed12cc5336ae5764d97db4d7c88c
         z-index: 1;
     }
     .icon:hover{
@@ -76,6 +89,7 @@ html, body{
     
     .popup{
         width: 400px;
+        max-width: 80%;
         background: #fff;
         border-radius: 6px;
         position: absolute;
@@ -175,7 +189,11 @@ html, body{
         overflow: hidden;
         border: 2px solid rgba(0, 0, 0, 0);
         -webkit-transition: -webkit-transform .5s ease;
+<<<<<<< HEAD
         transition: transform .5s ease;
+=======
+        transition: transform .3s ease;
+>>>>>>> 9fa3ed671368ed12cc5336ae5764d97db4d7c88c
         z-index: 1;
     }
     .icon:hover{
@@ -232,3 +250,8 @@ html, body{
     }
 
 }
+
+.shadow{
+    filter: drop-shadow(0px 0px 25px rgba(255, 247, 165, 0.3));
+}
+
