@@ -2,6 +2,8 @@ let popup = document.getElementById("popup");
 let txt = document.getElementById("texto");
 let imagem = document.getElementById("imagem");
 let paragrafo = document.getElementById("paragrafo");
+let link = document.getElementById("link");
+
 
 function openPopup(x){
     popup.classList.add("open-popup");
@@ -11,18 +13,21 @@ function openPopup(x){
         txt.textContent = 'ALIMENTAÇÃO';
         imagem.src = './src/ico/food.png';
         paragrafo.textContent = '\nAcesse aqui seu aplicativo de delivery para fazer seu pedido de comida.\nTente dizer “Hey Carro, acessar Ifood\nAí é só seguir com sua pesquisa e realizar seu pedido!';
+        link.href = './alimentacao.html'
     }
     else if (x == 'rotina'){
         
         txt.textContent = 'ROTINA';
         imagem.src = './src/ico/calendar.png';
         paragrafo.textContent = '\nCadastre suas rotinas aqui para facilitar seu dia a dia.';
+        link.href = './rotina.html'
     }
     else if (x == 'google'){
         
         txt.textContent = 'GOOGLE';
         imagem.src = './src/ico/google.png';
         paragrafo.textContent = '\nFaça aqui sua pesquisa.';
+        link.href = 'https://www.google.com.br'
     }
     else if (x == 'help'){
         
@@ -35,24 +40,28 @@ function openPopup(x){
         txt.textContent = 'GPS';
         imagem.src = './src/ico/mapa.png';
         paragrafo.textContent = '\nDefina seus trajetos.';
+        link.href = 'https://www.google.com/maps'
     }
     else if (x == 'entretenimento'){
         
         txt.textContent = 'ENTRETENIMENTO';
         imagem.src = './src/ico/pipoca.png';
         paragrafo.textContent = '\nVeja as atrações que estão acontecendo na cidade hoje.\nTente dizer “Hey Carro, quais atrações na cidade hoje?” ou “Hey Carro, o que está passando no cinema hoje?”\nVocê também consegue pesquisar os bares e restaurantes da cidade, basta acessar o aplicativo do Trip Advisor, tente dizer “Hey Carro, abrir Trip Advisor”';
+        link.href = './entretenimento.html'
     }
     else if (x == 'dispositivos'){
         
         txt.textContent = 'DISPOSITIVOS';
         imagem.src = './src/ico/settings.png';
         paragrafo.textContent = 'Cadastre seus dispositivos inteligentes aqui, tente dizer “Hey Carro, abrir portão da garagem”, ou “Hey Carro, acender luz da garagem”.';
+        link.href = './dispositivos.html' 
     }
     else if (x == 'usuario'){
         
         txt.textContent = 'CONDUTOR';
         imagem.src = './src/ico/usuario.png';
         paragrafo.textContent = 'Cadastre seu perfil de condutor aqui e configure seu carro para seu conforto e segurança.';
+        link.href = './condutor.html'
     }
     else if (x == 'mais'){
 
@@ -81,5 +90,6 @@ function openPopup(x){
 }
 
 function closePopup(){
+
     popup.classList.remove("open-popup");
 }

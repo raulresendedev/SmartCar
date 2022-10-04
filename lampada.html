@@ -27,16 +27,37 @@
             </div>
         </div>
         <div class="line">
-            <img class="icon" src="./src/ico/ligar.png">
-            <img class="icon" src="./src/ico/desligar.png">
-
-
+            <img class="icon" id="lampada" src="./src/ico/ligar.png" onclick="ligar()">
+            <img class="icon" src="./src/ico/desligar.png" onclick="desligar()">
+            <a href="javascript:history.back()"><img class="icon" src="./src/ico/voltar.png"></a>
         </div>
 
     </div>
 
     <script src="./popup.js"> </script>  
     <script src="./main.js"></script>
-    
+
+    <script> 
+
+        let lampada = document.getElementById("lampada")
+
+        function ligar(){
+
+            if (lampada.classList.contains("shadow")){
+
+                desligar()
+            }
+            else{
+
+                lampada.classList.add("shadow")
+                lampada.src = "./src/ico/ligado.png"
+            }
+        }
+
+        function desligar(){
+            lampada.src = "./src/ico/ligar.png"
+            lampada.classList.remove("shadow")
+        }
+    </script>
 </body>
 </html>
